@@ -80,8 +80,8 @@
         button = new createjs.Bitmap('../Assets/images/button.jpg');
         button.regX = 250 * 0.5;
         button.regY = 250 * 0.5;
-        button.scaleX = 0.5;
-        button.scaleY = 0.5;
+        button.scaleX = 0.8;
+        button.scaleY = 0.8;
         button.x = 250 * 0.5;
         button.y = 250 * 0.5;
         stage.addChild(button);
