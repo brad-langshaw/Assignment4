@@ -42,6 +42,7 @@
 
     var button2 = null;
     var button2Move = 5;
+    var linkText = "http://gc200243850.computerstudi.es/bitmap%20and%20vector/Portfolio/index.html";
 
     function init() {
         console.log("Initialization");
@@ -106,6 +107,7 @@
             Label.text = "Thanks";
             Label.regX = Label.getMeasuredWidth() * 0.5;
             Label.regY = Label.getMeasuredHeight() * 0.5;
+            window.location = linkText;
         });
         
         button.on('mouseover', function() {
