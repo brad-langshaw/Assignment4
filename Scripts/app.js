@@ -34,8 +34,8 @@
     // create a stage container object
     var stage = new createjs.Stage(canvas);
 
-    var helloLabel = null;
-    var helloLabelMove = 5;
+    var Label = null;
+    var LabelMove = 5;
 
     var button = null;
     var buttonMove = 5;
@@ -57,12 +57,11 @@
     // runs every frame
     function animationLoop() {
 
-        helloLabel.rotation += 5;
         button.rotation += 5;
-        helloLabel.x += helloLabelMove;
+        Label.x += LabelMove;
         button.x += buttonMove;
-        if ((helloLabel.x >= screenWidth) || (helloLabel.x <= 0)) {
-            helloLabelMove *= -1;
+        if ((Label.x >= 250) || (Label.x <= 0)) {
+            LabelMove *= -1;
             buttonMove *= -1;
         }
 
@@ -81,17 +80,17 @@
         button.y = 240;
         stage.addChild(button);
 
-        helloLabel = new createjs.Text("Hello World!", "40px Consolas", "#000000");
-        helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
-        helloLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
-        helloLabel.x = screenWidth * 0.5;
-        helloLabel.y = 240;
-        stage.addChild(helloLabel);
+        Label = new createjs.Text("Hello World!", "40px Consolas", "#000000");
+        Label.regX = Label.getMeasuredWidth() * 0.5;
+        Label.regY = Label.getMeasuredHeight() * 0.5;
+        Label.x = screenWidth * 0.5;
+        Label.y = 240;
+        stage.addChild(Label);
 
         button.on("click", function() {
-            helloLabel.text = "Clicked!";
-            helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
-            helloLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
+            Label.text = "Clicked!";
+            Label.regX = Label.getMeasuredWidth() * 0.5;
+            Label.regY = Label.getMeasuredHeight() * 0.5;
         });
         
         button.on('mouseover', function() {
