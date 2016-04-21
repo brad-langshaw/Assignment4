@@ -40,6 +40,9 @@
     var button = null;
     var buttonMove = 5;
 
+    var button2 = null;
+    var button2Move = 5;
+
     function init() {
         console.log("Initialization");
         // enable mouseover effects for all buttons
@@ -58,11 +61,14 @@
     function animationLoop() {
 
         button.rotation += 5;
+        button2.rotation += -5;
         Label.x += LabelMove;
         button.x += buttonMove;
+        button2.x += button2Move;
         if ((Label.x >= 250) || (Label.x <= 0)) {
             LabelMove *= -1;
             buttonMove *= -1;
+            button2Move *= -1;
         }
 
         // refresh the stage object
@@ -79,7 +85,16 @@
         button.x = 250 * 0.5;
         button.y = 250 * 0.5;
         stage.addChild(button);
-
+        
+        button2 = new createjs.Bitmap('../Assets/images/button2.jpg');
+        button2.regX = 250 * 0.5;
+        button2.regY = 250 * 0.5;
+        button2.scaleX = 0.5;
+        button2.scaleY = 0.5;
+        button2.x = 250 * 0.5;
+        button2.y = 250 * 0.5;
+        stage.addChild(button2);        
+        
         Label = new createjs.Text("Hello World!", "40px Consolas", "#000000");
         Label.regX = Label.getMeasuredWidth() * 0.5;
         Label.regY = Label.getMeasuredHeight() * 0.5;
