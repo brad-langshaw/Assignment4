@@ -82,7 +82,7 @@
         button.regY = 250 * 0.5;
         button.scaleX = 0.8;
         button.scaleY = 0.8;
-        button.x = 250 * 0.5;
+        button.x = 200 * 0.5;
         button.y = 250 * 0.5;
         stage.addChild(button);
         
@@ -91,7 +91,7 @@
         button2.regY = 250 * 0.5;
         button2.scaleX = 0.8;
         button2.scaleY = 0.8;
-        button2.x = 250 * 0.5;
+        button2.x = 100 * 0.5;
         button2.y = 250 * 0.5;
         stage.addChild(button2);        
         
