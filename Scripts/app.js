@@ -28,8 +28,8 @@
 
     // reference to canvas element
     var canvas = document.getElementById("canvas");
-    canvas.setAttribute("width", screenWidth);
-    canvas.setAttribute("height", "480");
+    canvas.setAttribute("width", "250");
+    canvas.setAttribute("height", "250");
 
     // create a stage container object
     var stage = new createjs.Stage(canvas);
@@ -73,8 +73,8 @@
     // this is where all the magic happens
     function main() {
         button = new createjs.Bitmap('../Assets/images/button.png');
-        button.regX = button.getBounds().width * 0.5;
-        button.regY = button.getBounds().height * 0.5;
+        button.regX = 250 * 0.5;
+        button.regY = 250 * 0.5;
         button.scaleX = 0.5;
         button.scaleY = 0.5;
         button.x = screenWidth * 0.5;
