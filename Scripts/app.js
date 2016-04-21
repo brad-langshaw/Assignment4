@@ -84,7 +84,7 @@
         Label.regX = Label.getMeasuredWidth() * 0.5;
         Label.regY = Label.getMeasuredHeight() * 0.5;
         Label.x = 250 * 0.5;
-        Label.y = 250 * 0.5;
+        Label.y = 240 * 0.5;
         stage.addChild(Label);
 
         button.on("click", function() {
