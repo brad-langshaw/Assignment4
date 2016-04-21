@@ -76,15 +76,15 @@
         button.regY = 250 * 0.5;
         button.scaleX = 0.5;
         button.scaleY = 0.5;
-        button.x = screenWidth * 0.5;
-        button.y = 240;
+        button.x = 250 * 0.5;
+        button.y = 250 * 0.5;
         stage.addChild(button);
 
         Label = new createjs.Text("Hello World!", "40px Consolas", "#000000");
         Label.regX = Label.getMeasuredWidth() * 0.5;
         Label.regY = Label.getMeasuredHeight() * 0.5;
-        Label.x = screenWidth * 0.5;
-        Label.y = 240;
+        Label.x = 250 * 0.5;
+        Label.y = 250;
         stage.addChild(Label);
 
         button.on("click", function() {
