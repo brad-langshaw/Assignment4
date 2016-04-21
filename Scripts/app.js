@@ -72,7 +72,7 @@
 
     // this is where all the magic happens
     function main() {
-        button = new createjs.Bitmap('../images/heroimage.png');
+        button = new createjs.Bitmap('../Assets/images/button.png');
         button.regX = button.getBounds().width * 0.5;
         button.regY = button.getBounds().height * 0.5;
         button.scaleX = 0.5;
