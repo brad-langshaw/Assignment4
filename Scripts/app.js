@@ -95,7 +95,7 @@
         button2.y = 250 * 0.5;
         stage.addChild(button2);        
         
-        Label = new createjs.Text("Hello World!", "40px Consolas", "#000000");
+        Label = new createjs.Text("WELCOME! CLICK HERE", "40px Consolas", "#000000");
         Label.regX = Label.getMeasuredWidth() * 0.5;
         Label.regY = Label.getMeasuredHeight() * 0.5;
         Label.x = 250 * 0.5;
@@ -103,7 +103,7 @@
         stage.addChild(Label);
 
         button.on("click", function() {
-            Label.text = "Clicked!";
+            Label.text = "Thanks";
             Label.regX = Label.getMeasuredWidth() * 0.5;
             Label.regY = Label.getMeasuredHeight() * 0.5;
         });
